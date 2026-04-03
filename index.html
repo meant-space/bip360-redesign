@@ -84,10 +84,12 @@
     <!-- PROBLEM -->
     <section class="section" id="threat">
         <div class="container">
-            <div class="section-header reveal">
+            <div class="section-header reveal" style="max-width: 800px;">
                 <span class="tag tag-red">The Problem</span>
-                <h2 class="section-title">Bitcoin's cryptography <span class="text-red">has an expiry date.</span></h2>
-                <p class="section-desc">Quantum computers will eventually break ECDSA — the elliptic curve cryptography protecting every Bitcoin address. This isn't science fiction. It's an engineering timeline.</p>
+                <h2 class="section-title">MAKE BITCOIN <span class="text-red">QUANTUM RESISTANT</span></h2>
+                <p class="section-desc">At present, Bitcoin addresses, especially, but not limited to, Taproot & Satoshi's coins, are not quantum resistant, and are vulnerable to attack in the event of sufficient advancement in quantum computing.</p>
+                <p class="section-desc">The development of Google's "Willow" quantum chip, as well as Microsoft's Majorana 1 chip, has shed light on this vulnerability in recent news, and has called into question our time left until "Q Day."</p>
+                <p class="section-desc">Industry roadmaps—led by companies including IBM, Google, Microsoft, Amazon, and Intel—suggest that quantum computers may be able to decrypt ECDSA cryptography used for Bitcoin's public/private key encryption in as little as 2-5 years. The US federal government, additionally, has issued a mandate to phase out use of ECDSA cryptography entirely by 2035.</p>
             </div>
 
             <div class="bento reveal" data-delay="0.15">
@@ -136,8 +138,12 @@
                 <div class="sticky-sidebar">
                     <div class="sticky-content reveal">
                         <span class="tag tag-gold">The Solution</span>
-                        <h2 class="section-title">Meet <span class="text-gold">BIP 360</span></h2>
-                        <p class="section-desc">Pay-to-Merkle-Root (P2MR) — a new output type that gives Bitcoin quantum resistance without breaking anything.</p>
+                        <h2 class="section-title">BIP 360</h2>
+                        <p class="section-desc" style="color: var(--text-0);"><strong>To enable Pay-to-Merkle-Root: a proposed first step in advancing Bitcoin quantum resistance</strong></p>
+                        <p class="section-desc" style="font-size: 0.95rem; margin-top: 16px;">BIP 360 proposes a new output type for Bitcoin: Pay-to-Merkle-Root (P2MR). P2MR outputs operate with nearly the same functionality as P2TR (Pay-to-Taproot) outputs, but with the quantum-vulnerable keypath spend removed.</p>
+                        <p class="section-desc" style="font-size: 0.95rem; margin-top: 16px;">This proposal has been put forth by co-authors Hunter Beast, Ethan Heilman, and Isabel Foxen Duke to address Bitcoin's most pressing quantum vulnerability: quantum-vulnerable addresses. At present, P2PK and Taproot addresses remain the most vulnerable address types on the network.</p>
+                        <p class="section-desc" style="font-size: 0.95rem; margin-top: 16px;">Given the critical role of Taproot addresses in Bitcoin scaling, we believe it's prudent to ensure that Bitcoin has a tapscript-native address output type that is protected from long-exposure quantum attacks.</p>
+                        <p class="section-desc" style="font-size: 0.95rem; margin-top: 16px;">The team additionally intends to introduce post-quantum signature schemes to protect Bitcoin addresses from potential short-exposure quantum attacks in future proposals. That said, we see the introduction of a quantum-resistant tapscript-native output type as a critical and relatively unobtrusive "first step" in making Bitcoin quantum-resistant.</p>
                     </div>
                 </div>
 
@@ -220,9 +226,11 @@
     <!-- ROADMAP -->
     <section class="section" id="roadmap">
         <div class="container">
-            <div class="section-header reveal">
+            <div class="section-header reveal" style="max-width: 800px;">
                 <span class="tag tag-gold">The Path Forward</span>
                 <h2 class="section-title">The transition has <span class="text-gold">already begun.</span></h2>
+                <p class="section-desc">While the amount of time we have to prepare for a quantum event is uncertain, it seems reasonable to ensure that Bitcoin is prepared for a range of possible outcomes.</p>
+                <p class="section-desc">Additionally, we must consider the total time needed for an effective transition—at the BIP level, the software level, the infrastructure level, and the user-transition level.</p>
             </div>
 
             <div class="vertical-timeline reveal" data-delay="0.1">
